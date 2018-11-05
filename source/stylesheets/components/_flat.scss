@@ -1,0 +1,20 @@
+.flat-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+ p{
+  color: gray;
+ }
+ img{
+  height: 150px;
+ }
+ h1 {
+  color: #505050;
+ }
+}
+
+.flat-content {
+  background-color: white;
+}

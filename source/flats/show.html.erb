@@ -1,0 +1,21 @@
+
+
+ <div class="flat" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
+<div class="flat-container">
+  <div id="flat">
+    <div class="flat-content">
+
+      <% flat = data.flats[owner] %>
+
+       <h1><%= flat.description %></h1>
+      <!-- Inject flat data in template -->
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle" %>
+      <p><%= flat.name %></p>
+      <p><%= flat.city_name %></p>
+      <p><%= "*" * flat.rating  %></p>
+        <% if flat.wifi == false %><p><%="N"%></p>
+        <% end %>
+    </ul>
+  </div>
+</div>
+</div>
