@@ -1,0 +1,28 @@
+---
+title: Le Wagon - Middleman - Team
+---
+
+<div class="team-container">
+  <div id="team">
+
+    <div class="team-content">
+      <h1>There is no "i" in Team</h1>
+      <ul class="list-inline">
+        <% data.team.each do |member| %>
+          <li>
+              <% link_to "https://kitt.lewagon.com/alumni/#{member.github_nickname}", target: "_blank" do %>
+                <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{member.github_nickname}",  class: "img-circle profile-pic" %>
+              <% end %>
+
+            <h2><%= member.name %></h2>
+            <p>
+              <% link_to "https://github.com/#{member.github_nickname}", target: "_blank" do %>
+                <i class="fab fa-github"></i> <%= member.github_nickname %>
+              <% end %>
+            </p>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

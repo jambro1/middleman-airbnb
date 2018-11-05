@@ -1,0 +1,31 @@
+
+.team-container{
+  background-image: linear-gradient(0deg, #fff 50%, #F4F4F4 50%);
+}
+
+#team {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h2{
+  font-size: 17px;
+}
+a{
+  color: gray;
+  font-size: 14px;
+}
+li{
+  padding: 20px;
+}
+}
+
+.team-content {
+}
+
+.profile-pic {
+  height: 150px;
+}
+
+
